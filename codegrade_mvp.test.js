@@ -55,7 +55,7 @@ describe('server.js', () => {
       expect(res.body).toMatchObject(cars)
     }, 750)
   })
-  describe.only('[GET] /api/cars/:id', () => {
+  describe('[GET] /api/cars/:id', () => {
     beforeEach(async () => {
       await db('cars').truncate()
       await db('cars').insert(cars)
@@ -73,7 +73,7 @@ describe('server.js', () => {
       expect(res.status).toBe(404)
     }, 750)
   })
-  describe('[POST] /api/cars', () => {
+  describe.only('[POST] /api/cars', () => {
     beforeEach(async () => {
       await db('cars').truncate()
     })
