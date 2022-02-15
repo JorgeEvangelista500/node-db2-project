@@ -73,7 +73,7 @@ describe('server.js', () => {
       expect(res.status).toBe(404)
     }, 750)
   })
-  describe.only('[POST] /api/cars', () => {
+  describe('[POST] /api/cars', () => {
     beforeEach(async () => {
       await db('cars').truncate()
     })
