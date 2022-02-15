@@ -1,3 +1,6 @@
+const Cars = require('./cars-model')
+
+
 const checkCarId = (req, res, next) => {
   // DO YOUR MAGIC
 }
